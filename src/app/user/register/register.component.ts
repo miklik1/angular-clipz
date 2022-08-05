@@ -34,6 +34,10 @@ export class RegisterComponent {
     Validators.maxLength(9)
   ])
 
+  showAlert = false
+  alertMsg = 'Your account is beaing created.'
+  alertColor = 'blue'
+
   registerForm = new FormGroup({
     name: this.name,
     email: this.email,
@@ -42,4 +46,10 @@ export class RegisterComponent {
     confirm_password: this.confirm_password,
     phoneNumber: this.phoneNumber
   })
+
+  register() {
+    this.showAlert = true
+    this.alertMsg = 'Your account is beaing created.'
+    this.alertColor = 'blue'
+  }
 }
