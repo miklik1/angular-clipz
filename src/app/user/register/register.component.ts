@@ -40,7 +40,7 @@ export class RegisterComponent {
   registerForm = new FormGroup({
     name: this.name,
     email: this.email,
-    ahe: this.age,
+    age: this.age,
     password: this.password,
     confirm_password: this.confirm_password,
     phoneNumber: this.phoneNumber,
